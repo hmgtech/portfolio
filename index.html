@@ -16,6 +16,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         a { color: inherit; } 
+        .upper {
+            margin: 30px;
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            height: 80px;
+            padding: 5px; /* this */
+            margin: auto;
+            margin-top: -90px;
+            justify-content: space-around;
+            }
+
+        .upper > i {
+            flex: 1 1 auto;
+            border: 1px red solid;
+            text-align: center;
+
+            margin: 5px;  /* and that, will result in a 10px gap */
+            }
     </style>
 </head>
 <body>
@@ -253,13 +272,7 @@
             </div>
         </div>
     </section>
-    <div style="margin: auto;
-                margin-top: -90px;
-                width: 50%;
-                padding: 10px;
-                display: flex;
-                align-items: center;
-                justify-content: space-evenly;">
+    <div class="upper">
         <a href="https://www.linkedin.com/in/hitesh-gupta-0878b3173/"><i class="fa fa-linkedin-square" style="font-size:36px;color:#0e76a8"></i></a>      
         <a href="https://www.youtube.com/c/enggtech"><i class="fa fa-youtube-play" style="font-size:36px;color:red"></i></a>
         <a href="https://github.com/hmgtech/"><i class="fa fa-github" style="font-size:36px"></i></a>
